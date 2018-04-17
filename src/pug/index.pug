@@ -1,0 +1,29 @@
+extends ./layout/_index.pug
+
+block contents
+  include ./components/header/_index.pug
+  div.l-content
+    div.l-main
+      include ./components/project/_project-filter.pug
+      div.p-project_list
+        div.p-project_list_item
+          div.p-project_list_item_image(style="background-image: url(/images/project/project_image.png)")
+          div.p-project_list_item_title プロジェクトタイトル化粧品メーカーのEC運用代行
+          div.p-project_list_item_status
+            div.p-project_list_item_position ポジション名
+            div.p-project_list_item_time 15時間前
+          div
+            a.c-button--default(href="/project") 全て見る ≫
+
+        div.p-project_list_item
+          div.p-project_list_item_image(style="background-image: url(/images/project/project_image.png)")
+          div.p-project_list_item_title プロジェクトタイトル化粧品メーカーのEC運用代行
+          div.p-project_list_item_status
+            div.p-project_list_item_position ポジション名
+            div.p-project_list_item_time 15時間前
+          div
+            a.c-button--default(href="/project") 全て見る ≫
+
+    div.l-sidebar
+      include ./components/project/_project-sidebar.pug
+  include ./components/footer/_index.pug

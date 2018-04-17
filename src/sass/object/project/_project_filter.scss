@@ -1,0 +1,17 @@
+.p-project_filter_block {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.p-project_filter_item {
+  display: flex;
+  align-items: center;
+  .c-select {
+    max-width: 100px;
+  }
+}
+.p-project_filter_label {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 10px;
+}

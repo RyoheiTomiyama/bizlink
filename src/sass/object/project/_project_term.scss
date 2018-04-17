@@ -1,0 +1,27 @@
+.p-project_term {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+.p-project_term_label {
+  width: 40%;
+  min-width: 140px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.p-project_term_value {
+  flex: 1;
+  font-size: 12px;
+  font-weight: bold;
+}
+.p-project_term_other {
+  min-height: 6em;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  margin-top: 4px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+}

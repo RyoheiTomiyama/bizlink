@@ -1,0 +1,16 @@
+.l-content {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.l-main {
+  flex: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.l-sidebar {
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
