@@ -1,0 +1,16 @@
+extends ./_index.pug
+
+block contents
+  block header
+    div.p-logins_header
+      div.p-logins_header_main
+      div.p-logins_header_nav
+        a.p-logins_header_nav_item(href="/login")
+          button.c-button_text--default ログイン
+        a.p-logins_header_nav_item(href="#")
+          button.c-button_text--default Biz linkとは
+  div.p-logins
+    div.p-logins_body
+      block body
+    div.p-logins_copyright Copyright© Growther Inc. All Rights Reserved.
+

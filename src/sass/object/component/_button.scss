@@ -10,15 +10,30 @@
   line-height: 1.5;
   border-radius: 3px;
   transition: color .15s;
+  cursor: pointer;
 }
 
 .c-button--default {
   @extend .c-button;
   border-color: #ccc;
   background-color: $lighter-gray;
-  :hover {
+  &:hover {
     background-color: $light-gray;
   }
+}
+.c-button--main {
+  @extend .c-button;
+  color: #fff;
+  border-color: $blue;
+  background-color: $blue;
+  &:hover {
+    border-color: $dark-blue;
+    background-color: $dark-blue;
+  }
+}
+.c-button--main--sm {
+  @extend .c-button--main;
+  font-size: 12px;
 }
 
 .c-button_subscription {

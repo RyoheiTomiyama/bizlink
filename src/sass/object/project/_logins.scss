@@ -1,0 +1,107 @@
+.p-logins {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/logins/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.p-logins_header {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.p-logins_header_main {
+  flex: 1;
+}
+.p-logins_header_nav {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.p-logins_body {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+.p-logins_copyright {
+  text-align: center;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.p-logins_box {
+  max-width: 600px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.p-logins_box_content {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(#000, 0.2);
+}
+.p-logins_box_header {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.p-logins_box_body {
+  font-size: 12px;
+  padding: 20px;
+  line-height: 1.5;
+}
+.p-logins_box_footer {
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid $gray;
+}
+.p-logins_box_title {
+  font-size: 16px;
+  font-weight: bold;
+  color: $darker-gray;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.p-logins_box_close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background-color: $blue;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $dark-blue;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.c-checkbox {
+  + label {
+    position: relative;
+    display: inline-flex;
+    padding-left: 20px;
+    height: 29px;
+    line-height: 29px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+    &::before {
+      width: 10px;
+      height: 10px;
+      border: 1px solid $dark-gray;
+      border-radius: 2px;
+      box-shadow: 0 1px 1px 0 rgba(#000, 0.5);
+      left: 0;
+      top: 8px;
+    }
+    &::after {
+      transition: all 0.3s;
+      width: 4px;
+      height: 10px;
+      border-bottom: 3px solid $blue;
+      border-right: 3px solid $blue;
+      transform: rotate(45deg) scale(0);
+      top: 5px;
+      left: 4px;
+    }
+  }
+}
+.c-checkbox:checked {
+  + label {
+    &::after {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+}

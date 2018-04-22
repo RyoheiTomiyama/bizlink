@@ -1,0 +1,26 @@
+extends ../layout/_logins
+
+block body
+  div.p-logins_box.mb20
+    div.p-logins_box_content
+      div.p-logins_box_header
+        div.p-logins_box_title ログイン
+        div.p-logins_box_close
+      div.p-logins_box_body
+        form.p-login_form(action="/login")
+          div.c-form_group--row
+            label.c-label.c-label--row30 メールアドレス
+            input.c-form(type="input", placeholder="example@bizlink.co.jp")
+          div.c-form_group--row
+            label.c-label.c-label--row30 パスワード
+            input.c-form(type="input", placeholder="8桁の英数字で入力")
+          div.text-center
+            button.c-button_subscription--sm(type="submit") ログイン
+      div.p-logins_box_footer
+        div.text-center
+          div.p-login_social
+            a.p-login_social_item(href="#")
+              button.c-button_social--facebook Facebookアカウントでログイン
+            a.p-login_social_item(href="#")
+              button.c-button_social--linkedin Linkedinアカウントでログイン
+

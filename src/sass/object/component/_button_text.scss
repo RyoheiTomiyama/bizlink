@@ -1,0 +1,24 @@
+.c-button_text {
+  @extend .c-button;
+}
+.c-button_text--default {
+  @extend .c-button_text;
+  border-color: transparent;
+  background-color: transparent;
+  color: $darker-gray;
+  &:hover {
+    color: $dark-gray;
+  }
+}
+.c-button_text--main {
+  @extend .c-button_text;
+  border-color: transparent;
+  background-color: transparent;
+  color: $blue;
+  &:hover {
+    color: $dark-blue;
+  }
+}
+.c-button_text--sm {
+  font-size: 12px;
+}

@@ -1,0 +1,91 @@
+extends ../layout/_logins
+
+block body
+  div.p-logins_box.mb20
+    div.p-logins_box_content
+      div.p-logins_box_header
+        div.p-logins_box_title アカウント登録（無料）
+        div.p-logins_box_close
+      div.p-logins_box_body
+        form.p-login_form(action="/signup/register")
+          div.c-form_group--row
+            label.c-label.c-label--row30 氏名
+            div.p-register_input
+              input.c-form.mb10(type="input", name="username", placeholder="氏名を入力してください")
+              input.c-form(type="input", name="userkana", placeholder="氏名カナを入力してください")
+          div.c-form_group--row
+            label.c-label.c-label--row30 性別
+            div.p-register_input
+              input.c-radio(type="radio", name="sex", id="male")
+              label.mr10(for="male") 男性
+              input.c-radio(type="radio", name="sex", id="female")
+              label(for="female") 女性
+
+          div.c-form_group--row
+            label.c-label.c-label--row30 生年月日
+            div
+              label.c-select_group.mr10(style="width: 60px")
+                select.c-select(name="year")
+                  option(value="", selected, disabled) 年
+                  option(value="1990") 1990
+                  option(value="1991") 1991
+                  option(value="1992") 1992
+                  option(value="1993") 1993
+                  option(value="1994") 1994
+                  option(value="1995") 1995
+                  option(value="1996") 1996
+                  option(value="1997") 1997
+              label.c-select_group.mr10(style="width: 40px")
+                select.c-select(name="month")
+                  option(value="", selected, disabled) 月
+                  option(value="01") 01
+                  option(value="02") 02
+                  option(value="03") 03
+                  option(value="04") 04
+                  option(value="05") 05
+                  option(value="06") 06
+                  option(value="07") 07
+                  option(value="08") 08
+                  option(value="09") 09
+                  option(value="10") 10
+                  option(value="11") 11
+                  option(value="12") 12
+              label.c-select_group(style="width: 40px")
+                select.c-select(name="day")
+                  option(value="", selected, disabled) 日
+                  option(value="01") 01
+                  option(value="02") 02
+                  option(value="03") 03
+                  option(value="04") 04
+                  option(value="05") 05
+                  option(value="06") 06
+                  option(value="07") 07
+                  option(value="08") 08
+                  option(value="09") 09
+                  option(value="10") 10
+                  option(value="11") 11
+                  option(value="12") 12
+
+          div.c-form_group--row
+            label.c-label.c-label--row30 メールアドレス
+            div.p-register_input
+              input.c-form(type="input", name="email", placeholder="example@bizlink.co.jp")
+
+          div.c-form_group--row
+            label.c-label.c-label--row30 パスワード
+            div.p-register_input
+              input.c-form(type="password", name="password", placeholder="8桁の英数字で入力")
+
+      div.p-logins_box_footer
+        div.text-center
+          div.c-form_group.p-register_agree
+            input(type="checkbox", id="agree").c-checkbox
+            label(for="agree")
+            span
+              a.text-blue(href="/privacy", target="_blank") 利用規約・プライバシーポリシー
+            | に同意する
+          div
+            button.c-button--main.c-button--sm(type="submit") 登録してキャリアシートを作成
+          div.mb10
+            button.c-button_text--main.c-button_text--sm キャリシートをスキップして登録
+

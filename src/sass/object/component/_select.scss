@@ -1,7 +1,7 @@
 .c-select {
   position: relative;
   display: inline-flex;
-  height: 30px;
+  height: 29px;
   width: 100%;
   max-width: 100%;
   background-color: #fff;
@@ -15,4 +15,22 @@
   padding-left: 8px;
   padding-right: 8px;
   vertical-align: initial;
+}
+.c-select_group {
+  position: relative;
+  display: inline-block;
+  &::after {
+    position: absolute;
+    content: '';
+    top: 13px;
+    right: 6px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid $dark-gray;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+  .c-select {
+    padding-right: 14px;
+  }
 }

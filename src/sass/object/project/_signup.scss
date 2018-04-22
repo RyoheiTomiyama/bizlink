@@ -1,0 +1,35 @@
+.p-signup {
+  margin: auto;
+}
+.p-signup_logo {
+  max-width: 218px;
+  margin: 10px auto;
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+.p-signup_catchphrase {
+  max-width: 285px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+.p-signup_button {
+  min-width: 240px;
+}
+.p-signup_social {
+  max-width: 180px;
+  margin: 30px auto;
+}
+.p-signup_social_item {
+  display: block;
+  height: 24px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
