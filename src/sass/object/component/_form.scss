@@ -23,7 +23,7 @@
   max-width: 100%;
   background-color: #fff;
   font-size: 12px;
-  color: black;
+  color: $darker-gray;
   vertical-align: top;
   border: 1px solid $dark-gray;
   border-radius: 4px;
@@ -62,8 +62,60 @@
     background-color: $lighter-gray;
   }
 }
+.c-form--price {
+  position: relative;
+  max-width: 100px;
+  &::after {
+    position: absolute;
+    content: '¥';
+    color: $darker-gray;
+    left: 6px;
+    top: 8px;
+  }
+  input {
+    @extend .c-form;
+    text-align: right;
+    padding-left: 18px;
+  }
+}
 .c-label {
   font-size: 12px;
   line-height: 29px;
   color: $darker-gray;
+}
+.c-form_file {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+  &::before {
+    display: block;
+    content: url('/images/icons/file.svg');
+    width: 50px;
+    background-color: $lighter-gray;
+    padding: 22px 35px 38px;
+  }
+  &::after {
+    position: absolute;
+    top: 92px;
+    left: 49px;
+    content: '＋';
+    font-size: 20px;
+    font-weight: bold;
+    color: #b4b4b4;
+  }
+}
+.c-form_file--photo {
+  @extend .c-form_file;
+  &::before {
+    content: url('/images/icons/photo.svg');
+  }
 }

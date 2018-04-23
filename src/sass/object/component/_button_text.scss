@@ -19,6 +19,15 @@
     color: $dark-blue;
   }
 }
+.c-button_text--gray {
+  @extend .c-button_text;
+  border-color: transparent;
+  background-color: transparent;
+  color: $gray;
+  &:hover {
+    color: $dark-gray;
+  }
+}
 .c-button_text--sm {
   font-size: 12px;
 }
