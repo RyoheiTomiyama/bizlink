@@ -1,0 +1,24 @@
+.p-single_block {
+  max-width: calc(#{$section-width} + 40px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.p-single_title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  background-color: $light-gray;
+  padding: 0.3em 1em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.p-single_text {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
