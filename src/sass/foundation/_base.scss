@@ -2,7 +2,11 @@ $section-width: 662px;
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;;
+  // height: 100%;
+  min-height: 100vh;
 }
 a {
   color: inherit;

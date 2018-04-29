@@ -1,0 +1,26 @@
+.p-contacts_box {
+  border: 1px solid $dark-gray;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.p-contacts_box_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  border-bottom: 1px solid $light-gray;
+}
+.p-contacts_status {
+  color: $blue;
+  font-size: 10px;
+}
+.p-contacts_date {
+  color: $blue;
+  font-size: 10px;
+}
+.p-contacts_box_title {
+  color: $darker-gray;
+  font-size: 14px;
+  padding: 4px 8px;
+}

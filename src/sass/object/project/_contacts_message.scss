@@ -1,0 +1,61 @@
+.p-contacts_message {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.p-contacts_message_block {
+  flex: 1;
+  min-height: 200px;
+  max-height: 50vh;
+  padding: 10px 5px;
+  overflow-y: auto;
+}
+.p-contacts_message_input_block {
+  display: flex;
+  align-items: flex-end;
+  background-color: $light-blue;
+  border-top: 1px solid $light-gray;
+  padding: 12px 20px;
+}
+.p-contacts_message_textarea {
+  @extend .c-textarea;
+  border-color: $light-gray;
+  min-height: 100px;
+  margin-right: 10px;
+}
+.p-contacts_message_chat {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  &[reverse] {
+    flex-direction: row-reverse;
+    .p-contacts_message_chat_avatar {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+}
+.p-contacts_message_chat_avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  border: 1px solid $light-gray;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/images/avatars/nouser.svg');
+}
+.p-contacts_message_chat_content {
+  flex: 1;
+}
+.p-contacts_message_balloon {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 4px 8px;
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,19 @@
+extends ../layout/_index.pug
+
+block contents
+  include ../components/header/_index.pug
+  div.l-content--modal
+    div.p-modal_dialog
+      div.p-modal_content
+        div.p-modal_header
+          div.p-modal_title 表示できるコンタクトがありません
+        div.p-modal_body
+          div.text-center.mb10
+            span.text-bold あなたにぴったりなプロジェクトを見つけて
+              br
+              | 応募してみましょう
+        div.p-modal_footer
+          div.text-center
+            button.c-button_subscription--sm プロジェクトを探して応募
+
+  include ../components/footer/_index.pug

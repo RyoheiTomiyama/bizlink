@@ -1,0 +1,28 @@
+extends ../layout/_index.pug
+
+block contents
+  include ../components/header/_index.pug
+  div.l-content_title
+    h1.c-heading1 コンタクト一覧
+  div.l-content
+    div.l-main
+      div.p-contacts_box
+        div.p-contacts_box_info
+          div.p-contacts_status 応募
+          div.p-contacts_date 2017年 8月 8日 に応募
+        div.p-contacts_box_title プロジェクトタイトル化粧品メーカーのEC運用代行をお願いします！
+      div.p-tab
+        div.p-tab_wrap
+          input#p-tab--1(type="radio", name="tab", checked)
+          label(for="p-tab--1") メッセージ
+          input#p-tab--2(type="radio", name="tab")
+          label(for="p-tab--2") プロジェクト
+          div.p-tab_box
+            div.p-tab_content--1
+              include ../components/contacts/_contacts_message.pug
+            div.p-tab_content--2
+              include ../components/contacts/_contacts_project.pug
+
+    div.l-sidebar
+      include ../components/contacts/_contacts-sidebar.pug
+  include ../components/footer/_index.pug

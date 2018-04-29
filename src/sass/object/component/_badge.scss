@@ -8,3 +8,20 @@
   text-align: center;
   color: #fff;
 }
+
+.c-badge_status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 20px;
+  font-family: HelveticaNeue;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: $blue;
+  border-radius: 3px;
+  &[active] {
+    background-color: $dark-blue;
+  }
+}
