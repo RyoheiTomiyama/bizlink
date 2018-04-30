@@ -1,0 +1,10 @@
+@mixin link($color, $hover) {
+  color: $color;
+  cursor: pointer;
+  &:hover {
+    color: $hover;
+  }
+}
+.c-link--gray {
+  @include link($gray, $dark-gray);
+}
