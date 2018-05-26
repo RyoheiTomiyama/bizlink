@@ -18,7 +18,7 @@
 }
 .l-nav {
   display: flex;
-  flex: 1;
+  flex: 1 1 0%;
 }
 .l-nav-item {
   display: flex;
@@ -54,9 +54,6 @@
   z-index: 100;
 }
 @include mq-down() {
-  #header {
-    justify-content: space-between;
-  }
   .l-nav {
     position: fixed;
     display: block;
@@ -76,6 +73,9 @@
     justify-content: flex-start;
   }
   .l-nav-menu {
+    position: absolute;
+    top: 17px;
+    right: 10px;
     display: flex;
     align-items: center;
     padding-left: 10px;
