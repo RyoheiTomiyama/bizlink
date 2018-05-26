@@ -4,38 +4,95 @@
   width: 100%;
   height: 54px;
   background-color: $blue;
-  .l-logo {
-    display: flex;
-    align-items: center;
-    width: 114px;
-    padding-left: 17px;
-    padding-right: 17px;
-    img {
-      width: 100%;
-      vertical-align: top;
-    }
+}
+.l-logo {
+  display: flex;
+  align-items: center;
+  width: 114px;
+  padding-left: 17px;
+  padding-right: 17px;
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+.l-nav {
+  display: flex;
+  flex: 1;
+}
+.l-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: $dark-blue;
+  }
+  &[active] {
+    background-color: $dark-blue;
+  }
+  .c-badge {
+    margin-left: 4px;
+  }
+}
+.l-nav-menu {
+  display: none;
+}
+
+.l-nav_background {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(#000, 0.3);
+  z-index: 100;
+}
+@include mq-down() {
+  #header {
+    justify-content: space-between;
   }
   .l-nav {
-    display: flex;
-    flex: 1;
+    position: fixed;
+    display: block;
+    width: 200px;
+    top: 0;
+    right: -230px;
+    bottom: 0;
+    background-color: $blue;
+    z-index: 101;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 35px -5px $darker-gray;
+    overflow-y: auto;
   }
   .l-nav-item {
+    padding: 1em;
+    justify-content: flex-start;
+  }
+  .l-nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 112px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    &:hover {
-      background-color: $dark-blue;
-    }
-    &[active] {
-      background-color: $dark-blue;
-    }
-    .c-badge {
-      margin-left: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .l-nav-menu_close {
+    display: block;
+    padding: 10px;
+  }
+  #l-nav-toggle {
+    &:checked {
+      ~ .l-nav_background {
+        display: block;
+      }
+      ~ .l-nav {
+        transform: translateX(-230px);
+      }
     }
   }
 }

@@ -1,0 +1,10 @@
+@include mq-up(md) {
+  .hidden-md {
+    display: none;
+  }
+}
+@include mq-down(md) {
+  .hidden-sm {
+    display: none;
+  }
+}

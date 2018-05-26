@@ -1,7 +1,15 @@
 header#header
   a.l-logo(href="/")
     img(src="/images/common/bizlink_logo_w.svg")
+  input#l-nav-toggle(type="checkbox")
+  label.l-nav_background.hidden-md(for="l-nav-toggle")
+  .l-nav-menu.hidden-md
+    label(for="l-nav-toggle").c-menu_open
+      span
   .l-nav
+    label.l-nav-menu_close.hidden-md(for="l-nav-toggle")
+      .c-menu_close
+        span
     a.l-nav-item(href="/project", active) プロジェクト
       .c-badge 84
     a.l-nav-item(href="/contacts") コンタクト
