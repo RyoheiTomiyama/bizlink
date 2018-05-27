@@ -5,6 +5,9 @@
     color: $hover;
   }
 }
+.c-link--blue {
+  @include link($blue, $dark-blue);
+}
 .c-link--gray {
   @include link($gray, $dark-gray);
 }

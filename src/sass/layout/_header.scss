@@ -53,6 +53,9 @@
   background-color: rgba(#000, 0.3);
   z-index: 100;
 }
+#l-nav-toggle {
+  display: none;
+}
 @include mq-down() {
   .l-nav {
     position: fixed;

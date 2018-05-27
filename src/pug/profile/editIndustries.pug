@@ -1,0 +1,42 @@
+extends ./index
+
+block modal
+  div.p-modal
+    div.p-modal_dialog
+      div.p-modal_content
+        div.p-modal_header
+          div.p-modal_close
+        div.p-modal_body
+          div.p-careersheet_group
+            div.p-careersheet_industry
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit.deactive IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit.deactive IT・通信系
+              div.c-tag.c-tag--edit.deactive IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit.deactive IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit.deactive IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+              div.c-tag.c-tag--edit IT・通信系
+        div.p-modal_footer
+          div.text-center
+            button.c-button_subscription--sm 完了
+  script.
+    var tags = document.querySelectorAll('.c-tag--edit');
+    var skills = document.querySelectorAll('.c-skill--edit');
+    function handleClick() {
+      if (this.classList.contains('deactive')) {
+        this.classList.remove('deactive');
+      } else {
+        this.classList.add('deactive');
+      }
+    }
+    tags.forEach(function(el) {
+      el.addEventListener('click', handleClick);
+    });
+    skills.forEach(function(el) {
+      el.addEventListener('click', handleClick);
+    });

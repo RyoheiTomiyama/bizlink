@@ -7,6 +7,20 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.p-single_heading2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: $lighter-gray;
+  padding: 1em;
+}
+.p-single_heading3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
 .p-single_title {
   font-size: 14px;
   font-weight: bold;
@@ -20,5 +34,6 @@
   font-size: 12px;
   font-weight: normal;
   line-height: 1.5;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
